@@ -3,9 +3,10 @@
 
 library polyce.model.reflectable;
 
-import "package:serializer/serializer.dart";
 import "package:polymer/polymer.dart";
 import "serializer.dart";
+
+export 'serializer.dart';
 
 @serializable
 abstract class PolyceModel extends JsProxy {

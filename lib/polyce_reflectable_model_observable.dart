@@ -1,8 +1,9 @@
 library polyce.model.reflectable.observable;
 
-import "package:serializer/serializer.dart";
 import "serializer.dart";
 import "package:autonotify_observe/autonotify_observe.dart";
+
+export 'serializer.dart';
 
 @serializable
 abstract class PolyceModel extends Observable {

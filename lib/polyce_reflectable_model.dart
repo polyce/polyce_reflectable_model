@@ -12,6 +12,6 @@ export 'serializer.dart';
 abstract class PolyceModel extends JsProxy {
   String toString() => toMap.toString();
 
-  @reflectable String get toJson => serializer.encode(this);
-  @reflectable Map get toMap => serializer.toMap(this);
+  @reflectable @ignore String get toJson => serializer.encode(this);
+  @reflectable @ignore Map get toMap => serializer.toMap(this);
 }

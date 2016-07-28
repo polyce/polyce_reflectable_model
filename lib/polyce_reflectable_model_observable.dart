@@ -9,6 +9,6 @@ export 'serializer.dart';
 abstract class PolyceModel extends Observable {
   String toString() => toMap.toString();
 
-  @observable String get toJson => serializer.encode(this);
-  @observable Map get toMap => serializer.toMap(this);
+  @observable @ignore String get toJson => serializer.encode(this);
+  @observable @ignore Map get toMap => serializer.toMap(this);
 }
